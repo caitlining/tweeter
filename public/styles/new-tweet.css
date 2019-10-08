@@ -35,3 +35,10 @@ span.counter {
   border-top: 10px;
   float: right;
 }
+
+span.counter.tweetTooLong {
+  font-family: 'Bungee', sans-serif;
+  color:red;
+  border-top: 10px;
+  float: right;
+}

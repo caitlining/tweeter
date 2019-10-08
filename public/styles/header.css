@@ -6,12 +6,6 @@ header {
   margin-top: 120px;
   position: relative;
 }
-/* 
-header img {
-  position: absolute;
-  left: 50%;
-  margin-left: -128px;
-} */
 
 header img {
   position: absolute;
@@ -20,15 +14,6 @@ header img {
   margin: auto;
   top: 2%;
 }
-/* 
-header h2 {
-  width: 500px;
-  position: absolute;
-  left: 50%;
-  margin-left: -250px;
-  top: 60%;
-  text-align: center;
-} */
 
 header h2 {
   position: absolute;

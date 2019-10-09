@@ -6,13 +6,14 @@ $(document).ready(function() {
   $('.new-tweet textarea').on('input', function() {
     let newTweetLength = $(this).val().length;
     let nearbyCounter = $(this).siblings('.counter');
+    const tweetLengthLimit = 140
 
-    if (newTweetLength > 139) {
+    if (newTweetLength > tweetLengthLimit) {
       nearbyCounter.addClass('tweetTooLong');
-    } else if (newTweetLength <= 139) {
+    } else if (newTweetLength <= tweetLengthLimit) {
       nearbyCounter.removeClass('tweetTooLong');
     }
-    nearbyCounter.text(139 - newTweetLength);
+    nearbyCounter.text(tweetLengthLimit - newTweetLength);
   });
 
 });

@@ -1,4 +1,4 @@
-header {
+body > header {
   height: 400px;
   width: 100%;
   background-color: #6699CC;
@@ -7,7 +7,7 @@ header {
   position: relative;
 }
 
-header img {
+body > header img {
   position: absolute;
   left: 0;
   right: 0;
@@ -15,7 +15,7 @@ header img {
   top: 2%;
 }
 
-header h2 {
+body > header h2 {
   position: absolute;
   left: 0;
   right: 0;

@@ -67,11 +67,12 @@ $(document).ready(function() {
 
       const tweet = $form.serialize();
       $.ajax({ url: "/tweets/", method: 'POST', data: tweet })
-      .then (function (postRequestReturnValue) {
+      .then (function (successfulPost) {
         return $.ajax('/tweets', { method: 'GET' })
       })
-      .then (function (getRequestReturnValue) {
-        const latestTweet = [getRequestReturnValue[getRequestReturnValue.length - 1]];
+      .then (function (allTweetsArr) {
+        $form[0].reset();
+        const latestTweet = [allTweetsArr[allTweetsArr.length - 1]];
         renderTweets(latestTweet);
       })
     }

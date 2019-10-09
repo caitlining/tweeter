@@ -9,6 +9,10 @@
   font-family: 'Source Sans Pro', sans-serif;
  }
 
+ article.tweet:hover {
+  box-shadow: 5px 5px 0 #C8C8C8;
+ }
+
  article.tweet header {
   height: 75px;
   display: flex;
@@ -20,18 +24,33 @@
   height: 50px;
 }
 
+article.tweet header h4 {
+  font-weight: normal;
+}
+
 article.tweet header p {
   margin: 20px;
   font-size: 20px;
-  color:#C8C8C8;
+  color: #f4f1ec;
   margin-left: auto;
 }
 
+article.tweet:hover header h4 {
+  color: #282723;
+}
+
+article.tweet:hover header p {
+  color:#C8C8C8;
+}
 
 article.tweet p {
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+
+article.tweet:hover p {
+  color: #282723;
 }
 
 article.tweet footer {
@@ -46,6 +65,10 @@ article.tweet footer {
   flex-direction: row;
  }
 
+ article.tweet:hover footer p {
+  color: #282723;
+ }
+ 
  article.tweet footer p {
   font-size: 15px;
   color:#545149;

@@ -41,7 +41,7 @@ $(document).ready(function() {
   const renderTweets = function(tweetObjArr) {
     for (const tweet of tweetObjArr) {
       const $tweet = createTweetElement(tweet);
-      $('section.all-tweets').append($tweet);
+      $('section.all-tweets').prepend($tweet);
     }
   };
 
@@ -64,8 +64,16 @@ $(document).ready(function() {
     } else if (newTweetTextStr.length > 140) {
       alert("We do not accept tweets longer than 140 characters. Your tweet is currently too long.");
     } else {
+
       const tweet = $form.serialize();
-      $.ajax({ url: "/tweets/", method: 'POST', data: tweet }) 
+      $.ajax({ url: "/tweets/", method: 'POST', data: tweet })
+      .then (function (postRequestReturnValue) {
+        return $.ajax('/tweets', { method: 'GET' })
+      })
+      .then (function (getRequestReturnValue) {
+        const latestTweet = [getRequestReturnValue[getRequestReturnValue.length - 1]];
+        renderTweets(latestTweet);
+      })
     }
   })
 });

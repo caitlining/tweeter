@@ -6,6 +6,13 @@
 
 $(document).ready(function() {
 
+  //function to escape unsafe characters in tweets
+  const escape =  function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
   const createTweetElement = function(tweetObj) {
     const $tweet = $("<article>").addClass("tweet");
     const daysAgo = daysSinceTweet(tweetObj["created_at"])
@@ -16,7 +23,7 @@ $(document).ready(function() {
               <span>${tweetObj.user.name}</span>
               <span class="handle">${tweetObj.user.handle}</span>
           </header>
-          <span>${tweetObj.content.text}</span>
+          // <span>${escape(tweetObj.content.text)}</span>
           <footer>
             <span>${daysAgo} days ago</span>
             <span class="interactOptions">PIN RETWEET HEART</span>

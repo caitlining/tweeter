@@ -72,6 +72,7 @@ $(document).ready(function() {
       })
       .then (function (allTweetsArr) {
         $form[0].reset();
+        $form.children('span').text(140);
         const latestTweet = [allTweetsArr[allTweetsArr.length - 1]];
         renderTweets(latestTweet);
       })

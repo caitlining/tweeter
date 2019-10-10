@@ -6,13 +6,21 @@
 
 $(document).ready(function() {
 
-  //function to escape unsafe characters in tweets
+/**
+ * Takes in a string
+ * Prevents XSS by converting the string to a text node
+ * Returns the inner HTML of the created text node 
+ */
   const escape =  function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   }
 
+  /**
+   * Takes in a new tweet object
+   * Returns a new html article, with all tweet information properly organized
+   */
   const createTweetElement = function(tweetObj) {
     const $tweet = $("<article>").addClass("tweet");
     const daysAgo = daysSinceTweet(tweetObj["created_at"])

@@ -26,7 +26,7 @@ $(document).ready(function() {
           <span>${escape(tweetObj.content.text)}</span>
           <footer>
             <span>${daysAgo} days ago</span>
-            <span class="interactOptions">PIN RETWEET HEART</span>
+            <span class="interactOptions"><i class="fab fa-font-awesome-flag"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i></span>
           </footer>
           `;
 

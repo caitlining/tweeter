@@ -62,3 +62,7 @@ article.tweet footer {
    font-size: 12px;
    margin-left: auto;
  }
+
+ article.tweet footer span.interactOptions i {
+   padding: 5px;
+ }

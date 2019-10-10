@@ -2,9 +2,9 @@ nav {
   background-color: #4056A1;
   color: #FFFFFF;
   height: 120px;
+  position: fixed;
   top: 0;
   left: 0;
-  position: fixed;
   right: 0;
   z-index: 500;
   padding: 1.5em;
@@ -41,5 +41,19 @@ button {
 
   to {
     padding: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  nav {
+    background-color: #6699CC;
+    background-image: url(../images/arches.png);
+  }
+}
+
+
+@media (min-width: 850px) {
+  nav span i{
+    color: #6699CC;
   }
 }

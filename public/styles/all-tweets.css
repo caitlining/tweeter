@@ -66,3 +66,7 @@ article.tweet footer {
  article.tweet footer span.interactOptions i {
    padding: 5px;
  }
+
+ article.tweet:hover footer span.interactOptions i {
+   color: #4056A1;
+ }

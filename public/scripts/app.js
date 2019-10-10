@@ -62,16 +62,19 @@ $(document).ready(function() {
   loadTweets();
 
   $('.new-tweet form').submit( function (event) {
-    event.preventDefault();    
+    event.preventDefault();   
+    $('.new-tweet p').empty().slideUp();
     const $form = $(this);
     const newTweetTextStr = $form.children('textarea').val();
 
     if (!newTweetTextStr) {
-      alert("All tweets must contain at least one character. Your tweet currently does not.");
-    } else if (newTweetTextStr.length > 140) {
-      alert("We do not accept tweets longer than 140 characters. Your tweet is currently too long.");
+      $('.new-tweet p').append('<b>Error:</b> All tweets must contain at least one character. Your tweet currently does not.');
+      $('.new-tweet p').slideDown();
+    } else if (newTweetTextStr.length > 140) { 
+      $('.new-tweet p').append("<b>Error:</b> We do not accept tweets longer than 140 characters. Your tweet is currently too long.");
+      $('.new-tweet p').slideDown();
     } else {
-
+      $('.new-tweet p').slideUp();
       const tweet = $form.serialize();
       $.ajax({ url: "/tweets/", method: 'POST', data: tweet })
       .then (function (successfulPost) {

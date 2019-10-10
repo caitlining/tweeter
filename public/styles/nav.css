@@ -9,6 +9,8 @@ nav {
   z-index: 500;
   padding: 1.5em;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #logo {
@@ -16,7 +18,6 @@ nav {
 }
 
 #compose-new {
-  margin-left: auto;
   font-family: 'Source Sans Pro', sans-serif;
   color: #FFFFFF;
   display: flex;
@@ -52,7 +53,7 @@ button {
 }
 
 
-@media (min-width: 850px) {
+@media (min-width: 851px) {
   nav span i{
     color: #6699CC;
   }

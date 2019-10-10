@@ -36,6 +36,7 @@ article.tweet:hover header span.handle {
 
 article.tweet span {
   padding: 10px;
+  overflow-wrap: break-word;
 }
 
 article.tweet:hover span {

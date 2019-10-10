@@ -83,6 +83,9 @@ $(document).ready(function() {
         const latestTweet = [allTweetsArr[allTweetsArr.length - 1]];
         renderTweets(latestTweet);
       })
+      .fail(function (err) {
+        alert(err.responseJSON.error);
+      })
     }
   })
 

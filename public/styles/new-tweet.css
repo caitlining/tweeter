@@ -11,6 +11,7 @@ section.new-tweet {
   border-radius: 25px;
   display: none;
   text-align: center;
+  margin-top: 0px;
 }
 
 

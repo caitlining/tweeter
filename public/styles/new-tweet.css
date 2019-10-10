@@ -4,6 +4,15 @@ section.new-tweet {
   display: none;
 }
 
+.new-tweet p {
+  padding: 15px;
+  background-color: #F36060;
+  color: #FFFFFF;
+  border-radius: 25px;
+  display: none;
+  text-align: center;
+}
+
 
 textarea {
   background-color:  #f4f1ec;

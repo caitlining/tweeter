@@ -23,7 +23,7 @@ $(document).ready(function() {
               <span>${tweetObj.user.name}</span>
               <span class="handle">${tweetObj.user.handle}</span>
           </header>
-          // <span>${escape(tweetObj.content.text)}</span>
+          <span>${escape(tweetObj.content.text)}</span>
           <footer>
             <span>${daysAgo} days ago</span>
             <span class="interactOptions">PIN RETWEET HEART</span>
@@ -85,4 +85,10 @@ $(document).ready(function() {
       })
     }
   })
+
+  $('#compose-new button').click(function () {
+    $('section.new-tweet').slideToggle("slow");
+    $('section.new-tweet textarea').focus();
+  })
+
 });

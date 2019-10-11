@@ -10,11 +10,11 @@ Tweeter is a simple, single-page Twitter clone that allows users to post a tweet
 
 *Main page, sized for tablet*
 
-!["Screenshot of main page in tablet size"](https://github.com/caitlining/tweeter/blob/master/docs/screenshot-main-page-new-tweet-form-tablet.png?raw=true)
+!["Screenshot of main page in tablet size"](https://github.com/caitlining/tweeter/blob/master/docs/screenshot-main-page-tablet.png?raw=true)
 
 *Main page, sized for tablet, with the new tweet form visible*
 
-!["Screenshot of main page with toggled new tweet form"]()
+!["Screenshot of main page with toggled new tweet form"](https://github.com/caitlining/tweeter/blob/master/docs/screenshot-main-page-new-tweet-form-tablet.png?raw=true)
 
 *Main page, sized for desktop, with the new tweet form visible, and with an error message present*
 
@@ -24,12 +24,11 @@ Tweeter is a simple, single-page Twitter clone that allows users to post a tweet
 
 ## Getting Started
 
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command.
+1. Install dependencies using the `npm install` command.
+2. Start the web server using the `npm run local` command.
   - The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
-5. Start Tweeting!
+3. Go to <http://localhost:8080/> in your browser.
+4. Start Tweeting!
 
 ## Dependencies
 

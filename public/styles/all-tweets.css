@@ -39,7 +39,11 @@ article.tweet span {
   overflow-wrap: break-word;
 }
 
-article.tweet:hover span {
+article.tweet:hover header {
+  font-weight: 600;
+}
+
+article.tweet:hover footer {
   font-weight: 600;
 }
 
@@ -65,6 +69,7 @@ article.tweet footer {
 
  article.tweet footer span.interactOptions i {
    padding: 5px;
+   color: transparent;
  }
 
  article.tweet:hover footer span.interactOptions i {

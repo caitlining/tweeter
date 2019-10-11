@@ -18,8 +18,6 @@ nav {
 }
 
 #compose-new {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #FFFFFF;
   display: flex;
   flex-direction: column;
 }
@@ -29,17 +27,16 @@ button {
   color: #FFFFFF;
   border-style: none;
   cursor: pointer;
+  outline: none;
   animation-name: bounce;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
-  outline: none;
 }
 
 @keyframes bounce {
   from {
     padding: 0px;
   }
-
   to {
     padding: 10px;
   }

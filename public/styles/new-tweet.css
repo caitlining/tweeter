@@ -17,7 +17,6 @@ section.new-tweet {
 
 textarea {
   background-color:  #f4f1ec;
-  font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
   resize: none;
   border-style: none;
@@ -47,8 +46,5 @@ span.counter {
 }
 
 span.counter.tweetTooLong {
-  font-family: 'Bungee', sans-serif;
   color:red;
-  border-top: 10px;
-  float: right;
 }

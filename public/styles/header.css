@@ -20,7 +20,7 @@ body > header h2 {
 
 @media (min-width: 850px) {
   body > header {
-    width: 30%;
+    width: 30vw;
     float: left;
     margin: 170px 0px 0px 50px;
     position: fixed;

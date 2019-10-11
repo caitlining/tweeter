@@ -20,6 +20,11 @@ Tweeter is a simple, single-page Twitter clone that allows users to post a tweet
 
 !["Screenshot of main page with invalid tweet length error message"](https://github.com/caitlining/tweeter/blob/master/docs/screenshot-main-page-new-tweet-form-error.png?raw=true)
 
+*Single tweet, when mouse hovers over*
+
+!["Screenshot of single tweet on hover"](https://github.com/caitlining/tweeter/blob/master/docs/screenshot-single-tweet-hover.png?raw=true)
+
+
 *For a more in depth look at Tweeter, and to post your own Tweets, I encourage you to give it a try!*
 
 ## Getting Started

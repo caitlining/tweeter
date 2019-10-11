@@ -1,24 +1,27 @@
+section.all-tweets {
+  width: 100%;
+}
 
 article.tweet {
-border-style: solid;
-border-width: thick;
-color: #545149;
-margin-top: 50px;
-padding: 20px;
+  border-style: solid;
+  border-width: thick;
+  color: #545149;
+  margin-top: 50px;
+  padding: 20px;
 }
 
 article.tweet:hover {
-box-shadow: 5px 5px 0 #C8C8C8;
+  box-shadow: 5px 5px 0 #C8C8C8;
 }
 
 article.tweet header {
-display: flex;
-flex-direction: row;
-margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
 }
 
 article.tweet header img {
-height: 2em;
+  height: 2em;
 }
 
 article.tweet header span {
